@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27617.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "PreventMajorUpdate.Payload", "PreventMajorUpdate.Payload\PreventMajorUpdate.Payload.njsproj", "{E6AEB2F7-B717-45EC-A154-3EBA494BF4D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreventMajorUpdate.Launcher", "PreventMajorUpdate.Launcher\PreventMajorUpdate.Launcher.csproj", "{39F1CA28-7CF4-4531-9804-A90A15E04D3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E6AEB2F7-B717-45EC-A154-3EBA494BF4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6AEB2F7-B717-45EC-A154-3EBA494BF4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6AEB2F7-B717-45EC-A154-3EBA494BF4D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F1CA28-7CF4-4531-9804-A90A15E04D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F1CA28-7CF4-4531-9804-A90A15E04D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F1CA28-7CF4-4531-9804-A90A15E04D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F1CA28-7CF4-4531-9804-A90A15E04D3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

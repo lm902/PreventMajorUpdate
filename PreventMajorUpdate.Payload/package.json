@@ -9,5 +9,18 @@
   "dependencies": {
     "elevator": "^2.2.3",
     "is-elevated": "^2.0.1"
+  },
+  "devDependencies": {
+    "Babel": "0.0.1",
+    "babel-preset-env": "^1.6.1",
+    "uglify-js": "^3.3.22"
+  },
+  "scripts": {
+    "build": "babel app.js | uglifyjs -o app.min.js -c -m"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   }
 }
