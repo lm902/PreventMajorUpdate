@@ -1,0 +1,9 @@
+{
+  "name": "prevent-major-update.payload",
+  "version": "0.0.0",
+  "description": "PreventMajorUpdate.Payload",
+  "main": "app.js",
+  "author": {
+    "name": "i"
+  }
+}
