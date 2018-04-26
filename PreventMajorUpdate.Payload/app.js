@@ -7,6 +7,8 @@ const files = ['C:\\$WINDOWS.~BT', 'C:\\$WINDOWS.~WS']
 
 isElevated().then(elevated => {
   if (elevated) {
+    console.log('stop')
+    stop(['wuauserv'])
     console.log('takeown')
     takeown(files)
     console.log('grant')
@@ -75,6 +77,15 @@ function revoke(files) {
   for (let file of files) {
     try {
       cp.execSync(`icacls "${file}" /T /deny SYSTEM:F`)
+    }
+    catch (e) { }
+  }
+}
+
+function stop(services) {
+  for (let service of services) {
+    try {
+      cp.execSync(`net stop "${service}"`)
     }
     catch (e) { }
   }
