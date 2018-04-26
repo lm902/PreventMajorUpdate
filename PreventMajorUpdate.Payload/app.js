@@ -21,6 +21,8 @@ isElevated().then(elevated => {
     hide(files)
     console.log('revoke')
     revoke(files)
+    console.log('start')
+    stop(['wuauserv'])
   } else {
     cp.spawnSync('node_modules\\elevator\\bin\\elevate-x64.exe', process.argv)
   }
@@ -86,6 +88,15 @@ function stop(services) {
   for (let service of services) {
     try {
       cp.execSync(`net stop "${service}"`)
+    }
+    catch (e) { }
+  }
+}
+
+function start(services) {
+  for (let service of services) {
+    try {
+      cp.execSync(`net start "${service}"`)
     }
     catch (e) { }
   }
