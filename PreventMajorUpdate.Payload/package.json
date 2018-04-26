@@ -5,5 +5,9 @@
   "main": "app.js",
   "author": {
     "name": "i"
+  },
+  "dependencies": {
+    "elevator": "^2.2.3",
+    "is-elevated": "^2.0.1"
   }
 }

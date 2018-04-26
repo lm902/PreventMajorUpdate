@@ -1,0 +1,3 @@
+﻿node-modules
+packages.lock.json
+*.min.js
